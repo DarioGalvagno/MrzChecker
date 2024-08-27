@@ -83,11 +83,20 @@ if st.button("Generate MRZ Code"):
                 doc_type, issuing_country, surname, first_name + ' ' + middle_names, passport_number,
                 nationality, birthdate, gender, expiration_date
             )
-            # Display the MRZ code
+            # Highlight MRZ code up to expiration date
+            code_str = str(code)
+            expiration_idx = code_str.find(expiration_date)
+            highlighted_code = (
+                f"<span style='background-color: yellow;'>{code_str[:expiration_idx + len(expiration_date)]}</span>"
+                f"{code_str[expiration_idx + len(expiration_date):]}"
+            )
+
+            # Display the MRZ code with highlighted portion
             st.text("Generated MRZ Code:")
-            st.code(str(code))
+            st.markdown(highlighted_code, unsafe_allow_html=True)
+
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
-st.markdown("---")  # Adds a horizontal line
-st.markdown('Created by [Dario Galvagno](https://www.your-link-here.com)')
+        st.markdown("---")  # Adds a horizontal line
+        st.markdown('Created by [Dario Galvagno](https://www.your-link-here.com)')

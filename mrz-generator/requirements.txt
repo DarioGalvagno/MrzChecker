@@ -1,3 +1,5 @@
+python-mrz
+
 flet==0.22.*
 
-python-mrz
+

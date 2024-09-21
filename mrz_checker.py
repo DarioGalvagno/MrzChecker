@@ -91,4 +91,4 @@ if st.button("Generate MRZ Code"):
             st.error(f"An error occurred: {e}")
 
         st.markdown("---")  # Adds a horizontal line
-        st.markdown('Created by [Super Mario](https://www.your-link-here.com)')
+        st.markdown('Created by [Dario G](https://www.your-link-here.com)')

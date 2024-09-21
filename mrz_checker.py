@@ -3,13 +3,6 @@ import streamlit as st
 from mrz.generator.td3 import TD3CodeGenerator
 from datetime import datetime
 
-# Path to the logo image (use raw string notation)
-
-# Set up the logo path
-logo_path = os.path.expanduser(r"C:\Users\dario\OneDrive\Desktop\png-transparent-bass-player-icon-illustration-t-shirt-bass-guitar-bassist-fender-precision-bass-bass-guitar-text-logo-double-bass.png")
-
-# Display the logo at the top of the page, centered
-st.image(logo_path, width=150)
 
 
 

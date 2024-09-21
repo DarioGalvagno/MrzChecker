@@ -5,6 +5,7 @@ from datetime import datetime
 # Streamlit app title
 st.title("MRZ Code Generator")
 
+
 # Define dropdown options with placeholders for issuing country, nationality, and gender
 COUNTRY_OPTIONS = [
     "Select the country of issue", "AFG", "ALB", "DZA", "ASM", "AND", "AGO", "AIA", "ATA", "ATG", "ARG", "ARM", "ABW",
